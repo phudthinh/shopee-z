@@ -1,1 +1,3 @@
-Quản Lý Quán Mì Tôm Đào Phú Thịnh
+Quản Lý Quán Mì Tôm
+
+Tác giả: Đào Phú Thịnh
