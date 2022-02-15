@@ -1584,7 +1584,7 @@
 .footer_heading-list
 {
     list-style: none;
-    padding: 0;
+    padding: 0 8px;
 }
 
 .footer_heading-item
