@@ -1,0 +1,255 @@
+:root
+{
+    --colorWeb-01: #852D91;
+    --colorWeb-02: #312A6C;
+    --colorWeb-03: #572b7d;
+    --white--01: #ffffff;
+    --white--02: #cccccc;
+    --white--03: #999999;
+    --white--04: #666666;
+    --black--01: #1e1e1e;
+    --black--02: #252526;
+    --black--03: #2d2d2d;
+    --black--04: #333333;
+    --black--05: #3c3c3c;
+    --background--web: #dddddd;
+    --header-height: 120px;
+    --navbar-height: 24px;
+    --header-with-search-height: calc(var(--header-height) - var(--navbar-height));
+    --header-with-filter-on-tablet-mobile: 40px;
+}
+
+*
+{
+    box-sizing: inherit;
+}
+
+body
+{
+    background-color: var(--white--01);
+}
+
+html
+{
+    font-size: 62.5%; /* 1rem = 10px */
+    line-height: 1.6rem; /*chữ sẽ có khoảng cách 1.6rem = 16px */
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+/* .grid
+{
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.grid__full-width
+{
+    width: 100%;
+} */
+
+.grid__row
+{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -12px;
+    margin-right: 12px;
+}
+
+.grid__colums
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Test */
+.grid__colum-2
+{
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 16.667%;
+}
+.grid__colum-2-4
+{
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 20%;
+}
+.grid__colum-10
+{
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 83.33%;
+}
+
+/* Animation */
+@keyframes fadeIn 
+{
+    from
+    {
+        opacity: 0;
+    }
+    to
+    {
+        opacity: 1;
+    }
+}
+
+@keyframes growth 
+{
+    from
+    {
+        transform: scale(var(--growth-from))
+    }
+    to
+    {
+        transform: scale(var(--growth-to))
+    }
+}
+/* Modal */
+.modal
+{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    animation: fadeIn linear 0.1s;
+}
+
+.modal__overlay
+{
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.modal__body
+{
+    --growth-from: 0.5;
+    --growth-to: 1;
+    margin: auto;
+    position: relative;
+    z-index: 1;
+    animation: growth linear 0.3s;
+}
+
+.btn
+{
+    min-width: 120px;
+    height: 36px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    padding: 0;
+    outline: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none; /*bỏ gạch chân*/
+    line-height: 1.4rem;
+    background-color: var(--white--02);
+}
+/* .btn.btn--size-s
+{
+
+} */
+.btn.btn--normal
+{
+    background-color: var(--white--01);
+}
+.btn.btn--normal:hover
+{
+    opacity: 0.8;
+}
+
+.btn.btn--primary
+{
+    color: var(--white--01);
+    background-image: linear-gradient(0.35turn, var(--colorWeb-01), var(--colorWeb-02));
+}
+.btn.btn--primary:hover
+{
+    opacity: 0.9;
+}
+
+.filter__btn
+{
+    min-width: 80px;
+    margin: 0 4px;
+}
+.select__input
+{
+    position: relative;
+    min-width: 160px;
+    height: 36px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    background-color: var(--white--01);
+    padding: 0 4px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 4px;
+}
+.select__input:hover .select-input__list
+{
+    display: block;
+}
+.select__input-label
+{
+    font-size: 1.4rem;
+    margin: 0 8px 0 16px;
+}
+.select__input-icon
+{
+    font-size: 1.4rem;
+    color: var(--black--01);
+    margin: 0 16px 0 8px;
+    position: relative;
+    top: 1px;
+}
+.select-input__list
+{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 75%;
+    border-radius: 5px;
+    background-color: var(--white--01);
+    padding: 8px 16px;
+    list-style: none;
+    display: none;
+    z-index: 1;
+}
+.select-input__list::after
+{
+    position: absolute;
+    left: 0;
+    top: -30px;
+    width: 100%;
+    height: 30px;
+    content: "";
+    display: block;
+}
+/* .select-input__item
+{
+
+} */
+
+.select-input__link
+{
+    display: block;
+    padding: 8px 0;
+    font-size: 1.3rem;
+    text-decoration: none;
+    color: var(--black--01);
+}
+.select-input__link:hover
+{
+    color: var(--colorWeb-01);
+}

@@ -2,125 +2,615 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="style.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="icon" href="image/icon_shopeez.png" type="image/icon_shopeez.png">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+	<link rel="shortcut icon" type="image/png" href="./assets/image/Logo.png"/>
 	<title>ShopeeZ</title>
-	<style>body {background-color: #222222}</style>
+	<link href="./assets/fontawesome-free-6.0.0-web/css/all.css" rel="stylesheet">
+	<link rel = "stylesheet" href = "./assets/css/reset.css">
+	<link rel = "stylesheet" href = "./assets/css/main.css">
+	<link rel = "stylesheet" href = "./assets/css/base.css">
+	<link rel = "stylesheet" href = "./assets/css/grid.css">
+	<link rel = "stylesheet" href = "./assets/css/responsive.css">
+	<script src="./assets/js/scrip.js"></script>
 </head>
+
 <body>
-	<header id = "page_header">
-		<div id="menu_left">
-			<ul>
-				<li><a href="">Kênh người bán</a></li>
-				<li>|</li>
-				<li><a href="">Tải ứng dụng</a></li>
-				<li>|</li>
-				<li>Kết nối</li>
-				<li><a href="" title="Kết nối Facebook"><img id = "icon_left" src="image/facebook.png"></a></li>
-				<li><a href="" title="Kết nối Instagram"><img id = "icon_left" src="image/instagram.png"></a></li>
+	<div class="full">
+		<!-- Header -->
+		<div class="header">
+			<div class="grid wide">
+				<nav class="header__navbar hide_on-mobile-tablet">
+					<ul class="header__navbar-list">
+						<li class="header__navbar-item header__navbar--check header__navbar-item--separate">
+							<a href="" class="header__navbar-item-link">Tải ứng dụng</a>
+							<div class="header__qr">
+								<img src="./assets/image/QRcode.png" alt="QR code" class="header__qr-image">
+								<div class="header__apps-download">
+									<a href="" class="header__apps-download-link">
+										<img src="./assets/image/googleplay.png" alt="Google Play" class="header__apps-download-image">
+									</a>
+									<a href="" class="header__apps-download-link">
+										<img src="./assets/image/appstore.png" alt="Google Play" class="header__apps-download-image">
+									</a>
+								</div>
+							</div>
+						</li>
+						<li class="header__navbar-item header__navbar-item--separate">
+							<a href="" class="header__navbar-item-link">Trở thành Nhân viên tại ShopeeZ</a>
+						</li>
+						<li class="header__navbar-item">
+							<span class = "header__navbar-item--no-point">Kết nối</span>
+							<a href="https://www.facebook.com/phu.d.thinh/" class="header__navbar-icon-link" title="Kết nối Facebook!">
+								<img src="./assets/image/iconfacebook.png" alt="" class = "header__navbar-icon">
+							</a>
+							<a href="https://www.instagram.com/phu.d.thinh/" class="header__navbar-icon-link" title="Kết nối Instagram!">
+								<img src="./assets/image/iconinstagram.png" alt="" class = "header__navbar-icon header__navbar-icon--instagram">
+							</a>
+						</li>
+					</ul>
+					<ul class="header__navbar-list">
+						<li class="header__navbar-item header__navbar-item--check">
+							<a href="" class="header__navbar-item-link">
+								<img src="./assets/image/iconbell.png" alt="" class = "header__navbar-icon">Thông báo
+							</a>
+							<div class="header__notify">
+								<header class="header__notify-header">
+									<h3>Thông báo mới nhận</h3>
+								</header>
+								<ul class="header__notify-list">
+									<li class="header__notify-item header__notify-item--viewed">
+										<a href="" class="header__notify-link">
+											<img src="./assets/image/imgdefault.png" alt="Ảnh sản phẩm" class="header__notify-image">
+											<div class="header__notify-info">
+												<span class="header__notify-name">Thông báo 1</span>
+												<span class="header__notify-descriotion">Cảm ơn bạn đã đặt hàng tại ShopeeZ!</span>
+											</div>
+										</a>
+									</li>
+									<li class="header__notify-item">
+										<a href="" class="header__notify-link">
+											<img src="./assets/image/imgdefault.png" alt="Ảnh sản phẩm" class="header__notify-image">
+											<div class="header__notify-info">
+												<span class="header__notify-name">Thông báo 2</span>
+												<span class="header__notify-descriotion">Cảm ơn bạn đã đặt hàng tại ShopeeZ!</span>
+											</div>
+										</a>
+									</li>
+									<li class="header__notify-item">
+										<a href="" class="header__notify-link">
+											<img src="./assets/image/imgdefault.png" alt="Ảnh sản phẩm" class="header__notify-image">
+											<div class="header__notify-info">
+												<span class="header__notify-name">Thông báo 3</span>
+												<span class="header__notify-descriotion">Cảm ơn bạn đã đặt hàng tại ShopeeZ!</span>
+											</div>
+										</a>
+									</li>
+								</ul>
+								<footer class="header__notify-footer">
+									<a href="" class = "header__notify-footer-button">Xem tất cả</a>
+								</footer>
+							</div>
+						</li>
+						<li class="header__navbar-item">
+							<a href="" class="header__navbar-item-link">
+								<img src="./assets/image/iconquestion.png" alt="" class = "header__navbar-icon">Hỗ trợ
+							</a>
+						</li>
+						<li class="header__navbar-item header__navbar-language">
+							<a href="" class="header__navbar-item-link">
+								<img src="./assets/image/iconglobe.png" alt="" class = "header__navbar-icon">
+								Tiếng Việt
+								<img src="./assets/image/icondown.png" alt="" class = "header__navbar-icon">
+							</a>
+							<ul class="header__navbar-language-list">
+								<li class="header__navbar-language-item header__navbar-language--check">
+									<a href="">Tiếng Việt <i class="fa-solid fa-check"></i> </a>
+								</li>
+								<li class="header__navbar-language-item">
+									<a href="">Tiếng Anh</a>
+								</li>
+							</ul>
+						</li>
+						<li class="header__navbar-item header__navbar-item-user">
+							<a href="" class="header__navbar-item-link">
+								<img src="./assets/image/imgdefault.png" alt="" class = "header__navbar-icon header__navbar-avatar-img">
+								Tài khoản người dùng
+							</a>
+							<ul class="header__navbar-item-user-list">
+								<li class="header__navbar-user-item">
+									<a href="">Tài khoản của tôi</a>
+								</li>
+								<li class="header__navbar-user-item">
+									<a href="">Đơn mua</a>
+								</li>
+								<li class="header__navbar-user-item">
+									<a href="">Đăng xuất</a>
+								</li>
+							</ul>
+						</li>
+						<!-- <li class="header__navbar-item header__navbar-item--separate">
+							<a href="" class="header__navbar-item-link header__navbar-item--bold">Đăng ký</a>
+						</li>
+						<li class="header__navbar-item">
+							<a href="" class="header__navbar-item-link header__navbar-item--bold">Đăng nhập</a>
+						</li> -->
+					</ul>
+				</nav>
+				<!-- Header with search -->
+				<div class="header__navbar-with-search">
+					<label for="mobile-search-checkbox" class="header__mobile-with-search">
+						<i class="header__mobile-with-search-icon fa-solid fa-magnifying-glass"></i>
+					</label>
+					<div class="header__logo hide_on-tablet">
+						<a href=""><img src="./assets/image/Logo-full.png" alt="" class="header__logo-img"></a>
+					</div>
+					<input type="checkbox" hidden id="mobile-search-checkbox" class="header__search-checkbox">
+					<div class="header__search">
+						<!-- Search history -->
+						<div class="header__search-input-wrap">
+							<input type="text" class="header__search-input" placeholder="Tìm kiếm mì tôm tại ShopeeZ!!">
+							<div class="header__search-history">
+								<h3 class="header__search-history-heading">Lịch sử tìm kiếm</h3>
+								<ul class = "header__search-history-list">
+									<li class = "header__search-history-item">
+										<a href="">Mì tôm nhưng không có tôm</a>
+									</li>
+									<li class = "header__search-history-item">
+										<a href="">Mì bò kobe</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="header__search-select-item">
+							<span class="header__search-select-label">Mì tôm</span>
+							<i class="header__search-select-icon fa-solid fa-caret-down"></i>
+							<ul class="header__search-option">
+								<li class="header__search-option-item header__search-option-item--check">
+									<span>Sản phẩm 1</span>
+									<i class="fa-solid fa-check"></i>
+								</li>
+								<li class="header__search-option-item">
+									<span>Sản phẩm 2</span>
+									<i class="fa-solid fa-check"></i>
+								</li>
+								<li class="header__search-option-item">
+									<span>Sản phẩm 3</span>
+									<i class="fa-solid fa-check"></i>
+								</li>
+								<li class="header__search-option-item">
+									<span>Sản phẩm 4</span>
+									<i class="fa-solid fa-check"></i>
+								</li>
+								<li class="header__search-option-item">
+									<span>Sản phẩm 5</span>
+									<i class="fa-solid fa-check"></i>
+								</li>
+							</ul>
+						</div>
+						<button class="header__search-btn">
+							<i class="header__search-btn-icon fa-solid fa-magnifying-glass"></i>
+						</button>
+					</div>
+					<!-- cart -->
+					<div class="header__cart">
+						<!-- No Item -->
+						<div class="header__cart-wrap">
+							<img src="./assets/image/iconcart.png" alt="" class="header__cart-img">
+							<span class="header__cart-notice">3</span>
+							<div class="header__cart-list"> <!-- header__cart-list--no-cart -->
+								<img src="./assets/image/iconmeo.png" alt="" class = "header__cart--img-no-cart">
+								<p class="header__cart--message-no-cart">Bạn chưa có sản phẩm nào trong đơn hàng</p>
+								<h4 class="header__cart-heading">Sản phẩm đã thêm</h4>
+								<ul class = "header__cart-list-item">
+									<!-- Cart item -->
+									<li class = "header__cart-item">
+										<img src="./assets/image/imgdefault.png" alt="" class = "header__cart-item-img">
+										<div class="header__cart-item-info">
+											<div class="header__cart-item-head">
+												<h5 class="header__cart-item-name">Sản phẩm 1</h5>
+												<div class="header__cart-item-price-warp">
+													<span class="header__cart-item-price">15.000đ</span>
+													<span class="header__cart-item-multiply">x</span>
+													<span class="header__cart-item-qnt">2</span>
+												</div>
+											</div>
+											<div class="header__cart-item-body">
+												<span class="header__cart-item-description">Đơn hàng loại 1</span>
+												<span class="header__cart-item-remove">Xóa</span>
+											</div>
+										</div>
+									</li>
+									<li class = "header__cart-item">
+										<img src="./assets/image/imgdefault.png" alt="" class = "header__cart-item-img">
+										<div class="header__cart-item-info">
+											<div class="header__cart-item-head">
+												<h5 class="header__cart-item-name">Sản phẩm 2</h5>
+												<div class="header__cart-item-price-warp">
+													<span class="header__cart-item-price">18.000đ</span>
+													<span class="header__cart-item-multiply">x</span>
+													<span class="header__cart-item-qnt">3</span>
+												</div>
+											</div>
+											<div class="header__cart-item-body">
+												<span class="header__cart-item-description">Đơn hàng loại 1</span>
+												<span class="header__cart-item-remove">Xóa</span>
+											</div>
+										</div>
+									</li>
+									<li class = "header__cart-item">
+										<img src="./assets/image/imgdefault.png" alt="" class = "header__cart-item-img">
+										<div class="header__cart-item-info">
+											<div class="header__cart-item-head">
+												<h5 class="header__cart-item-name">Sản phẩm 3</h5>
+												<div class="header__cart-item-price-warp">
+													<span class="header__cart-item-price">12.000đ</span>
+													<span class="header__cart-item-multiply">x</span>
+													<span class="header__cart-item-qnt">1</span>
+												</div>
+											</div>
+											<div class="header__cart-item-body">
+												<span class="header__cart-item-description">Đơn hàng loại 1</span>
+												<span class="header__cart-item-remove">Xóa</span>
+											</div>
+										</div>
+									</li>
+								</ul>
+								<button class = "header__cart-btn btn btn--primary">Xem giỏ hàng</button>
+							</div>
+						</div>
+					</div>
+				</div>	
+			</div>
+			<ul class="header-filter-on-tablet-mobile">
+				<li class="header-filter-on-tablet-mobile-item">
+					<a href="" class="header-filter-on-tablet-mobile-link header-filter-on-tablet-mobile-link--active">Phổ biến</a>
+				</li>
+				<li class="header-filter-on-tablet-mobile-item">
+					<a href="" class="header-filter-on-tablet-mobile-link">Mới nhất</a>
+				</li>
+				<li class="header-filter-on-tablet-mobile-item">
+					<a href="" class="header-filter-on-tablet-mobile-link">Bán chạy</a>
+				</li>
+				<li class="header-filter-on-tablet-mobile-item">
+					<a href="" class="header-filter-on-tablet-mobile-link">Giá</a>
+				</li>
 			</ul>
 		</div>
-		<div id="menu_right">
-			<ul>
-				<li><a href=""><img id = "icon_right" src="image/bell.png">Thông báo</a></li>
-				<li>|</li>
-				<li><a href=""><img id = "icon_right" src="image/question.png">Hỗ trợ </a></li>
-				<li>|</li>
-				<li><a href=""><img id = "icon_right" src="image/globe.png">Tiếng Việt</a></li>
-				<li>|</li>
-				<li><a href="">Tên tài khoản</a></li>
-			</ul>
+
+		<div class="app__container">
+			<div class="grid wide">
+				<div class="row sm-gutter app__conten">
+					<div class="col l-2 m-0 c-0">
+						<nav class="category">
+							<h3 class="category__heading"><i class="category__heading-icon fa-solid fa-list"></i>Danh mục</h3>
+							<ul class="category__list">
+								<li class="category__item category__item--active">
+									<a href="" class="category__link">Các loại mì tôm</a>
+								</li>
+								<li class="category__item">
+									<a href="" class="category__link">Nước uống</a>
+								</li>
+								<li class="category__item">
+									<a href="" class="category__link">Ăn vặt</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+					<div class="col - l-10 m-12 c-12">
+						<div class="filter hide_on-mobile-tablet">
+							<span class = "filter__label">Sắp xếp theo</span>
+							<button class="filter__btn btn btn--primary">Phổ biến</button>
+							<button class="filter__btn btn btn--normal">Mới nhất</button>
+							<button class="filter__btn btn btn--normal">Bán chạy</button>
+							<div class="select__input">
+								<span class = "select__input-label">Giá</span>
+								<i class="select__input-icon fa-solid fa-caret-down"></i>
+								<ul class="select-input__list">
+									<li class="select-input__item">
+										<a href="" class="select-input__link">Giá: Cao đến thấp</a>
+									</li>
+									<li class="select-input__item">
+										<a href="" class="select-input__link">Giá: Thấp đến cao</a>
+									</li>
+								</ul>
+							</div>
+							<div class="filter__page">
+								<span class = "filter__page-num">
+									<span class = "filter__page-current">1</span>/12
+								</span>
+								<div class="filter__page-control">
+									<a href="" class="filter__page-btn filter__page-btn--disabled">
+										<i class="fa-solid fa-caret-left"></i>
+									</a>
+									<a href="" class="filter__page-btn filter__page-btn--normal">
+										<i class="fa-solid fa-caret-right"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+						<nav class="mobile-tablet-category">
+							<ul class="mobile-tablet-category-list">
+								<li class="mobile-tablet-category-item">
+									<a href="" class="mobile-tablet-category-link">Các loại mì tôm</a>
+								</li>
+								<li class="mobile-tablet-category-item">
+									<a href="" class="mobile-tablet-category-link">Nước uống</a>
+								</li>
+								<li class="mobile-tablet-category-item">
+									<a href="" class="mobile-tablet-category-link">Ăn vặt</a>
+								</li>
+							</ul>
+						</nav>
+						<div class="product">
+							<div class="row sm-gutter">
+								<!-- Product item -->
+								<div class="col l-2-4 m-4 c-12">
+									<a class="product-item" href="">
+										<div class="product-item-img" style = "background-image: url(./assets/image/imgdefault.png);"></div>
+										<h4 class="product-item-name">Mì tôm Alaska siêu ngon 99% là mì không có tôm</h4>
+										<div class="product-item__price">
+												<span class="product-item__price-old">79.000đ</span>
+												<span class="product-item__price-current">69.000đ</span>
+										</div>
+										<div class="product-item__action">
+												<span class = "product-item-like product-item-like--liked">
+													<i class="product-item-like-icon-empty fa-regular fa-heart"></i>
+													<i class="product-item-like-icon-fill fa-solid fa-heart"></i>
+												</span>
+												<div class="product-item-rating">
+													<i class="fa-solid fa-star"></i>
+													<i class="fa-solid fa-star"></i>
+													<i class="fa-solid fa-star"></i>
+													<i class="fa-regular fa-star"></i>
+													<i class="fa-regular fa-star"></i>
+												</div>
+												<span class="product-item__sold">Đã bán 938</span>
+										</div>
+										<div class="product-item__origin">
+												<span class="product-item__brand">Meo</span>
+												<span class="product-item__origin-name">Vũng Tàu</span>
+										</div>
+										<div class="product-item-favorite">
+												<i class="fa-solid fa-check"></i>
+												Yêu thích
+										</div>
+										<div class="product-item-sale">
+												<span class="product-item__sale-percent">10%</span>
+												<span class="product-item__sale-label">GIẢM</span>
+										</div>
+									</a>
+								</div>
+							</div>
+						</div>
+						<ul class="pagination pagination_product">
+							<li class="pagination-item">
+								<a href="" class="pagination-link">
+									<i class="fa-solid fa-caret-left"></i>
+								</a>
+							</li>
+							<li class="pagination-item pagination-item-avtive">
+								<a href="" class="pagination-link">
+								1
+								</a>
+							</li>
+							<li class="pagination-item">
+								<a href="" class="pagination-link">
+								2
+								</a>
+							</li>
+							<li class="pagination-item">
+								<a href="" class="pagination-link">
+								3
+								</a>
+							</li>
+							<li class="pagination-item">
+								<a href="" class="pagination-link">
+								...
+								</a>
+							</li>
+							<li class="pagination-item">
+								<a href="" class="pagination-link">
+								12
+								</a>
+							</li>
+							<li class="pagination-item">
+								<a href="" class="pagination-link">
+									<i class="fa-solid fa-caret-right"></i>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
 		</div>
-		<div id = "full_find">
-			<input id = "textbox_find" type = "text" name = "" placeholder="Tìm kiếm..."></input>
-			<button id="button_find" onclick="location.href=''" type="button"><i class="fa fa-search"></i></button>
-			<button id="button_cart" onclick="location.href=''" type="button"><i class="fa fa-shopping-cart"></i></button>
+		<footer class="footer">
+			<div class="grid wide footer-warp">
+				<div class="row distance-footer-body">
+					<div class="col l-2-4 m-4 c-6">
+						<h3 class="footer_heading">CHĂM SÓC KHÁCH HÀNG</h3>
+						<ul class="footer_heading-list">
+							<li class="footer_heading-item">
+								<a href="" class="footer_heading-link">Trung Tâm Trợ Giúp</a>
+							</li>
+							<li class="footer_heading-item">
+								<a href="" class="footer_heading-link">Hướng Dẫn Mua Hàng</a>
+							</li>
+							<li class="footer_heading-item">
+								<a href="" class="footer_heading-link">Thanh Toán</a>
+							</li>
+							<li class="footer_heading-item">
+								<a href="" class="footer_heading-link">Vận Chuyển</a>
+							</li>
+							<li class="footer_heading-item">
+								<a href="" class="footer_heading-link">Trả Hàng & Hoàn Tiền</a>
+							</li>
+							<li class="footer_heading-item">
+								<a href="" class="footer_heading-link">Chính Sách Bảo Hành</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col l-2-4 m-4 c-6">
+						<h3 class="footer_heading">VỀ SHOPEEZ</h3>
+						<ul class="footer_heading-list">
+							<li class="footer_heading-item">
+								<a href="" class="footer_heading-link">Giới Thiệu Về ShopeeZ Việt Nam</a>
+							</li>
+							<li class="footer_heading-item">
+								<a href="" class="footer_heading-link">Tuyển Dụng</a>
+							</li>
+							<li class="footer_heading-item">
+								<a href="" class="footer_heading-link">Điều Khoản ShopeeZ</a>
+							</li>
+							<li class="footer_heading-item">
+								<a href="" class="footer_heading-link">Chính Sách Bảo Mật</a>
+							</li>
+							<li class="footer_heading-item">
+								<a href="" class="footer_heading-link">Website Bán Mì Tôm Lớn Nhất Việt Nam</a>
+							</li>
+							<li class="footer_heading-item">
+								<a href="" class="footer_heading-link">Liên Hệ Với Truyền Thông</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col l-2-4 m-4 c-6">
+						<h3 class="footer_heading">THANH TOÁN</h3>
+						<div class="footer_heading-img-full">
+							<img src="./assets/image/chuaco.png" alt="" class="footer_heading-img">
+						</div>
+						<h3 class="footer_heading">ĐƠN VỊ VẬN CHUYỂN</h3>
+						<div class="footer_heading-img-full">
+							<img src="./assets/image/chuaco.png" alt="" class="footer_heading-img">
+						</div>
+					</div>
+					<div class="col l-2-4 m-4 c-6">
+						<h3 class="footer_heading">THEO DÕI CHÚNG TÔI TRÊN</h3>
+						<ul class="footer_heading-list">
+							<li class="footer_heading-item">
+								<a href="" class="footer_heading-link">
+									<img src="./assets/image/iconfacebook.png" alt="" class = "footer-icon">
+									Facebook
+								</a>
+							</li>
+							<li class="footer_heading-item">
+								<a href="" class="footer_heading-link">
+									<img src="./assets/image/iconinstagram.png" alt="" class = "footer-icon">
+									Instagram
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col l-2-4 m-8 c-12">
+						<h3 class="footer_heading">TẢI ỨNG DỤNG SHOPEEZ</h3>
+						<ul class="footer_heading-list">
+							<li class="footer_heading-item">
+								<div class="footer-qr">
+									<a href="" class="footer_heading-link">
+										<img src="./assets/image/QRcode.png" alt="" class = "footer-qr-img">
+									</a>
+									<div class="footer__apps-download">
+										<a href="" class="footer_heading-link">
+											<img src="./assets/image/googleplay.png" alt="" class = "footer__apps-download-image">
+										</a>
+										<a href="" class="footer_heading-link">
+											<img src="./assets/image/appstore.png" alt="" class = "footer__apps-download-image">
+										</a>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="grid wide">
+				<p class ="fotter-end">© 2022 ShopeeZ. Tất cả các quyền được bảo lưu.</p>
+			</div>
+		</footer>
+	</div>
+	<!-- <div class="modal">
+		<div class="modal__overlay">
+
 		</div>
-		<div id = "logo">
-			<a href=""><img id = "image_logo" src="image/logo_shopeez.png"></a>
+		<div class="modal__body"> -->
+			<!-- Form đăng ký -->
+			<!-- <div class="auth-form">
+				<div class="auth-form__container">
+					<div class="auth-form__header">
+						<h3 class="auth-form__heading">Đăng ký</h3>
+						<span class="auth-form__switch-btn">Đăng nhập</span>
+					</div>
+					<div class="auth-form__form">
+						<div class="auth-form__group">
+							<input type="text" class="auth-form__input" placeholder="Nhập tài khoản">
+						</div>
+						<div class="auth-form__group">
+							<input type="password" class="auth-form__input" placeholder="Nhập mật khẩu">
+						</div>
+						<div class="auth-form__group">
+							<input type="password" class="auth-form__input" placeholder="Nhập lại mật khẩu">
+						</div>
+					</div>
+					<div class="auth-form__aside">
+						<p class="auth-form__policy-text">
+							Bằng việc đăng ký, bạn đã đồng ý với ShopeeZ về
+							<a href="" class = "auth-form__policy-link" >Điều khoản dịch vụ</a> & 
+							<a href="" class = "auth-form__policy-link" >Chính sách bảo mật</a>
+						</p>
+					</div>
+					<div class="auth-form__controls">
+						<button class="btn btn--normal">TRỞ LẠI</button>
+						<button class="btn btn--primary">ĐĂNG KÝ</button>
+					</div>
+				</div>
+				<div class="auth-form__socials">
+					<a href="" class="auth-form__socials--facebook btn btn--size-s btn--with-icon">
+						<i class="auth-form__socials-icon fa-brands fa-facebook-square"></i>
+						<span class="auth-form__socials--label">Kết nối với Facebook</span>
+					</a>
+					<a href="" class="auth-form__socials--google btn btn--size-s btn--with-icon">
+						<img src="./assets/image/icongoogle.png" alt="Biểu tượng Google" class = "auth-form__socials-icon">
+						<span class="auth-form__socials--label">Kết nối với Google</span>
+					</a>
+				</div>
+			</div> -->
+			<!-- Form đăng nhập -->
+			<!-- <div class="auth-form">
+				<div class="auth-form__container">
+					<div class="auth-form__header">
+						<h3 class="auth-form__heading">Đăng nhập</h3>
+						<span class="auth-form__switch-btn">Đăng ký</span>
+					</div>
+					<div class="auth-form__form">
+						<div class="auth-form__group">
+							<input type="text" class="auth-form__input" placeholder="Nhập tài khoản">
+						</div>
+						<div class="auth-form__group">
+							<input type="password" class="auth-form__input" placeholder="Nhập mật khẩu">
+						</div>
+					</div>
+					<div class="auth-form__aside">
+						<div class="auth-form__help">
+							<a href="" class = "auth-form__help-link auth-form__help-forget" >Quên mật khẩu</a>
+							<span class="auth-form__help--separate"></span>
+							<a href="" class = "auth-form__help-link" >Cần trợ giúp?</a>
+						</div>
+					</div>
+					<div class="auth-form__controls">
+						<button class="btn btn--normal">TRỞ LẠI</button>
+						<button class="btn btn--primary">ĐĂNG NHẬP</button>
+					</div>
+				</div>
+				<div class="auth-form__socials">
+					<a href="" class="auth-form__socials--facebook btn btn--size-s btn--with-icon">
+						<i class="auth-form__socials-icon fa-brands fa-facebook-square"></i>
+						<span class="auth-form__socials--label">Đăng nhập với Facebook</span>
+					</a>
+					<a href="" class="auth-form__socials--google btn btn--size-s btn--with-icon">
+						<img src="./assets/image/icongoogle.png" alt="Biểu tượng Google" class = "auth-form__socials-icon">
+						<span class="auth-form__socials--label">Đăng nhập với Google</span>
+					</a>
+				</div>
+			</div>
 		</div>
-	</header>
-	<header id = "page_midder_01">
-		<div>
-			<a href=""><img id = "image_ads_01" src="image/ADS_01.png"></a>
-			<a href=""><img id = "image_ads_02"src="image/ADS_02.png"></a>
-			<a href=""><img id = "image_ads_03"src="image/ADS_03.png"></a>
-		</div>
-	</header>
-	<header id = "page_distance">
-	</header>
-	<header id = "page_midder_02">
-		<div>
-			<h4>Danh mục</h4>
-		</div>
-		<hr>
-		<div>
-			<ul>
-				<li>
-					<button id = "button_menu" onclick="location.href=''" type="button">
-						<img id = "image_button_menu"src="image/image_button_menu_01.png">
-						<p id = "text_button_menu">Mì tôm trứng</p>
-					</button>
-				</li>
-				<li>
-					<button id = "button_menu" onclick="location.href=''" type="button">
-						<img id = "image_button_menu"src="image/image_button_menu_02.png">
-						<p id = "text_button_menu">Mì tôm thịt bằm</p>
-					</button>
-				</li>
-				<li>
-					<button id = "button_menu" onclick="location.href=''" type="button">
-						<img id = "image_button_menu"src="image/image_button_menu_03.png">
-						<p id = "text_button_menu">Mì tôm gà</p>
-					</button>
-				</li>
-				<li>
-					<button id = "button_menu" onclick="location.href=''" type="button">
-						<img id = "image_button_menu"src="image/image_button_menu_04.png">
-						<p id = "text_button_menu">Mì tôm bò</p>
-					</button>
-				</li>
-				<li>
-					<button id = "button_menu" onclick="location.href=''" type="button">
-						<img id = "image_button_menu"src="image/image_button_menu_05.png">
-						<p id = "text_button_menu">Mì tôm xúc xích</p>
-					</button>
-				</li>
-				<li>
-					<button id = "button_menu" onclick="location.href=''" type="button">
-						<img id = "image_button_menu"src="image/image_button_menu_06.png">
-						<p id = "text_button_menu">Mì tôm xào</p>
-					</button>
-				</li>
-				<li>
-					<button id = "button_menu" onclick="location.href=''" type="button">
-						<img id = "image_button_menu"src="image/image_button_menu_07.png">
-						<p id = "text_button_menu">Mì tôm trộn</p>
-					</button>
-				</li>
-				<li>
-					<button id = "button_menu" onclick="location.href=''" type="button">
-						<img id = "image_button_menu"src="image/image_button_menu_08.png">
-						<p id = "text_button_menu">Mì tôm chả cá</p>
-					</button>
-				</li>
-				<li>
-					<button id = "button_menu" onclick="location.href=''" type="button">
-						<img id = "image_button_menu"src="image/image_button_menu_09.png">
-						<p id = "text_button_menu">Mì tôm hùm</p>
-					</button>
-				</li>
-				<li>
-					<button id = "button_menu" onclick="location.href=''" type="button">
-						<img id = "image_button_menu"src="image/image_button_menu_10.png">
-						<p id = "text_button_menu">Mì tôm thập cẩm</p>
-					</button>
-				</li>
-			</ul>
-		</div>
-	</header>
+	</div> -->
 </body>
 </html>
